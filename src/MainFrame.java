@@ -63,20 +63,20 @@ public class MainFrame extends JFrame implements ActionListener {
 	{
 	    // If Nimbus is not available, you can set the GUI to another look and feel.
 	}
-		mainbody.setSize(971,640);
-		mainbody.setLocation(200,50);
+		mainbody.setSize(1300,720);
+		mainbody.setLocation(0,0);
 		mainbody.setVisible(true);
 		mainbody.setLayout(null); 
 		mainbody.setResizable(false);
 		mainbody.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	   
 		
-		photo.setBounds(30, 50, 300, 30);
+		photo.setBounds(30, 10, 300, 30);
 		photo.setVisible(true);
 		mainbody.add(photo);
 	
 		
-		cta.setBounds(430, 50, 300, 30);
+		cta.setBounds(430, 10, 300, 30);
 		cta.setVisible(true);
 		mainbody.add(cta);
 		cta.addMouseListener(new MouseAdapter() {
@@ -94,7 +94,7 @@ public class MainFrame extends JFrame implements ActionListener {
 		});
 		
 		
-		photobox.setBounds(200,200,700,600);
+		photobox.setBounds(10,50,1200,700);
 		photobox.setBackground(Color.RED);
 		photobox.setVisible(true);
 		mainbody.add(photobox);
@@ -123,8 +123,8 @@ public class MainFrame extends JFrame implements ActionListener {
 		if(e.getSource()==photo)
 		{
 			
-			filechooser= new JFileChooser("F:\\Live_WorkSpaces\\Java_WorkSpace\\MMB_GUI\\MMB_GUI\\images");
-		    filechooser.setDialogTitle("Upload Your Palmprint Sample 5");
+			filechooser= new JFileChooser("C:\\");
+		    filechooser.setDialogTitle("Upload Image Sample");
 		    filechooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
 		    //below codes for select  the file 
 		    int returnval=filechooser.showOpenDialog(this);
