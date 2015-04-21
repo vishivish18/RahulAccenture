@@ -146,7 +146,6 @@ public class MainFrame extends JFrame implements ActionListener {
 		        }
 		        this.pack();
 		    }
-			
   File f = new File(filechooser.getSelectedFile().toString());
 	        
 
